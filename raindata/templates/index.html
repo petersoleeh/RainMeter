@@ -5,13 +5,33 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-6">
-      <p>six</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <h3>Rainfall recorded in mm per month</h3>
+      <div class="container-fluid">
+        <form   method="post" enctype="multipart/form-data">
+          {%csrf_token%}
+
+          {{form.as_p}}
+
+          <input type="submit"class="btn btn-primary" name="" value="Add">
+
+        </form>
+      </div>
     </div>
     <div class="col-md-6">
-      <p>other six</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <table>
+        <tr>
+          <th>Month</th>
+          <th>Rainfall(mm)</th>
+        </tr>
+        {%for rain in data%}
+        <tr>
+          <td>{{rain.month}}</td>
+          <td>{{rain.rainfall}}</td>
+        </tr>
+        {%endfor%}
+      </table>
     </div>
   </div>
 </div>
+
 {%endblock%}

@@ -19,3 +19,11 @@
   text-align: center;
 
 }
+td, th{
+  border: 1px solid #260e04;
+  padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #4e342e;
+    color: #fff;
+}

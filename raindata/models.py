@@ -1,7 +1,9 @@
 from django.db import models
 from datetime import datetime
 
+
 import plotly.plotly as py
+import plotly.tools as tls
 import plotly.graph_objs as go
 
 
@@ -16,7 +18,7 @@ class Raindata(models.Model):
         return self.month
 
 
-    @property
+    @classmethod
     def rain_graph(self):
         data = [
             go.Bar(

@@ -1,5 +1,7 @@
 {%load bootstrap3%}
 {% load static %}
+{% load chartit %}
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +31,15 @@
   {%block content%}{%endblock%}
 
   {%block script%}
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highstock/2.1.9/highcharts-more.js"></script> -->
+    <script> src="https://code.highcharts.com/highcharts.js"
+
+    </script>
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
 
     {%bootstrap_javascript%}
   {%endblock%}

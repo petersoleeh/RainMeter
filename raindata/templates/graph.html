@@ -1,1 +1,16 @@
-<div>{{raindata.rain_graph}}</div>
+{%extends 'base.html'%}
+{%load static%}
+{% load chartit %}
+
+
+{%block content%}
+<head>
+  <script src ="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script type ="text/javascript" src ="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  
+    {{ weatherchart|load_charts:"container" }}
+</head>
+<body>
+    <div id='container'> Chart will be rendered here </div>
+</body>
+{%endblock%}

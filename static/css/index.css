@@ -18,6 +18,7 @@
   background-color: #260e04;
   color: #fff;
   text-align: center;
+  z-index: +1;
 
 }
 td, th{

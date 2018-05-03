@@ -5,4 +5,7 @@ class RainForm(forms.ModelForm):
 
     class Meta:
         model = Raindata
-        fields = ("__all__")
+        fields = ('__all__')
+        widgets = {
+            'month':forms.TextInput(attrs={'placeholder': 'Month'})
+        }

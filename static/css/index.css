@@ -38,3 +38,6 @@ body{
 .header{
   font-size: 60px;
 }
+#graph{
+  height: 800px;
+}

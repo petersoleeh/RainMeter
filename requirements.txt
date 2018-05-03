@@ -6,6 +6,7 @@ cufflinks==0.12.1
 decorator==4.3.0
 Django==2.0.4
 django-bootstrap3==10.0.0
+django-chartit==0.2.9
 idna==2.6
 ipython==6.3.1
 ipython-genutils==0.2.0

@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import datetime
+from django.shortcuts import render_to_response
 
 
 import plotly.plotly as py
@@ -11,7 +12,7 @@ import plotly.graph_objs as go
 
 class Raindata(models.Model):
     date = models.DateTimeField(auto_now_add=True)
-    month = models.CharField(max_length=20)
+    month = models.CharField(max_length=20, unique=True)
     rainfall = models.IntegerField(default=0) #rainfall in MM
 
     def __str__(self):
@@ -19,13 +20,13 @@ class Raindata(models.Model):
 
 
     @classmethod
-    def rain_graph(self):
+    def rain_graph(cls):
         data = [
             go.Bar(
-                x=[self.month], #Months Jan - Dec
-                y=[self.rainfall] # Rainfall in mm
+                x=[cls.month], #Months Jan - Dec
+                y=[cls.rainfall] # Rainfall in mm
             )
         ]
         plot_url = py.iplot(data, filename='basic-bar')
 
-        return plot_url
+        return render_to_response('index.html', plot_url)

@@ -7,7 +7,6 @@ from django.shortcuts import render_to_response, redirect
 # Create your views here.
 def index(request):
     data = Raindata.objects.all()
-    # graph = Raindata.rain_graph()
 
     if request.method == 'POST':
         form = RainForm(request.POST)

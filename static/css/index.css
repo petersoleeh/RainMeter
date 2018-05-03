@@ -5,7 +5,8 @@
 }
 .navbar-default .navbar-brand{
   color: #fff;
-
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
 }
 
 .footer{
@@ -26,4 +27,13 @@ td, th{
 tr:nth-child(even) {
     background-color: #4e342e;
     color: #fff;
+}
+
+body{
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 15px;
+}
+
+.header{
+  font-size: 60px;
 }

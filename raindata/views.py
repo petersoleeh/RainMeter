@@ -12,6 +12,7 @@ def index(request):
         if form.is_valid():
             raindata = form.save(commit=False)
             raindata.save()
+            form = RainForm()
 
     else:
 

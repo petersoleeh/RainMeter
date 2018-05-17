@@ -1,4 +1,4 @@
-# RainMeter
+# RainMeter.
 Collects Rainfall Data Per Month and Present it in a Timeseries Graph
 #### Created by [Peter Maina](https://github.com/petersoleeh) 
 

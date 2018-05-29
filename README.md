@@ -26,6 +26,7 @@ These instructions will get you a copy of the project up and running on your loc
 <ul>
   <li>Python3.6</li>
   <li>Django</li>
+  
  </ul>
  
  ## Technologies Used
@@ -33,6 +34,7 @@ These instructions will get you a copy of the project up and running on your loc
   <li>Python3.6</li>
   <li>Django</li>
   <li>Sqlite</li>
+  <li>Highcharts</li>
   <li>Bootstrap3</li>
  </ul>
   

@@ -39,7 +39,7 @@ These instructions will get you a copy of the project up and running on your loc
  </ul>
   
  ## Support and contact details
- Please reach out via this email address <email>petersoleeh@gmail.com</email>
+ Please reach out via <a href="petersoleeh@gmail.com">this<a/> email address
  
  ### License
 MIT 

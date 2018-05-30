@@ -8,6 +8,7 @@ from django.shortcuts import render_to_response, redirect
 def index(request):
     data = Raindata.objects.all()
 
+
     if request.method == 'POST':
         form = RainForm(request.POST)
         if form.is_valid():
@@ -40,7 +41,7 @@ def rainfall_graph(request):
                 [{'options': {
 
                     'type': 'line',
-                    'stacking': False},
+                    'stacking': True},
 
                    'terms':{
                         'month': [

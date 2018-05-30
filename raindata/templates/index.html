@@ -19,17 +19,21 @@
       </div>
     </div>
     <div class="col-md-6">
-      <table>
+      <table id="dts">
+        <thead>
         <tr>
           <th>Month</th>
           <th>Rainfall(mm)</th>
         </tr>
+      </thead>
+      <tbody>
         {%for rain in data%}
         <tr>
           <td>{{rain.month}}</td>
           <td>{{rain.rainfall}}</td>
         </tr>
         {%endfor%}
+      </tbody>
       </table>
     </div>
   </div>
